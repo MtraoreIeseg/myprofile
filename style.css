@@ -4,6 +4,26 @@ body {
     background: linear-gradient(45deg, #4b0082, #0000ff, #8b0000); /* Définit un arrière-plan dégradé pour le corps du document */
     margin: 0; /* Supprime les marges autour du corps du document */
     padding: 0; /* Supprime les espaces intérieurs autour du corps du document */
+    animation: gradient 10s ease infinite; /* Ajoute une animation au fond */
+}
+
+/* Définition de l'animation de gradient */
+@keyframes gradient {
+    0% {background: #4b0082;}
+    33% {background: #0000ff;}
+    66% {background: #8b0000;}
+    100% {background: #4b0082;}
+}
+
+body::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5); /* Couche noire semi-transparente */
+    position: fixed; /* Position fixe par rapport à la fenêtre du navigateur */
+    top: 0; /* Aligné en haut */
+    left: 0; /* Aligné à gauche */
+    width: 100%; /* Largeur complète */
+    height: 100%; /* Hauteur complète */
+    z-index: -1; /* Place la couche derrière le contenu */
 }
 
 .container {

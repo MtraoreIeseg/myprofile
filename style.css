@@ -1,0 +1,106 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Définit la police de caractères pour le corps du document */
+    color: #333; /* Définit la couleur du texte pour le corps du document */
+    background: linear-gradient(45deg, #4b0082, #0000ff, #8b0000); /* Définit un arrière-plan dégradé pour le corps du document */
+    margin: 0; /* Supprime les marges autour du corps du document */
+    padding: 0; /* Supprime les espaces intérieurs autour du corps du document */
+}
+
+.container {
+    max-width: 800px; /* Définit la largeur maximale du conteneur à 800px */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+}
+
+h1:first-of-type {
+    color: #f2f2f2; /* Définit la couleur du premier titre h1 sur la page */
+    text-align: center; /* Centre le texte du premier titre h1 sur la page */
+    padding: 20px 0; /* Ajoute un espace de 20px au-dessus et en dessous du premier titre h1 sur la page */
+}
+
+#my-school h1 {
+    color: #800080; /* Définit la couleur du titre h1 avec l'identifiant "my-school" en violet */
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.6); /* Définit la couleur d'arrière-plan des éléments avec la classe "box" en noir semi-transparent */
+    border-radius: 10px; /* Arrondit les coins des éléments avec la classe "box" */
+    margin: 30px; /* Ajoute une marge autour des éléments avec la classe "box" */
+    padding: 20px; /* Ajoute un espace intérieur aux éléments avec la classe "box" */
+}
+
+h1, h2 {
+    color: #fff; /* Définit la couleur des titres h1 et h2 en blanc */
+    text-align: center; /* Centre les titres h1 et h2 */
+}
+
+img {
+    display: block; /* Affiche l'image en tant que bloc, ce qui lui permet d'avoir des marges et des espaces intérieurs */
+    margin-left: auto; /* Centre horizontalement l'image */
+    margin-right: auto;
+    width: 50%; /* Définit la largeur de l'image à 50% de son conteneur parent */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+.content {
+    opacity: 0; /* Rend le contenu invisible initialement (utilisé pour l'animation) */
+}
+
+.fade-in {
+    animation: fadeIn ease 3s; /* Applique une animation de fondu aux éléments avec la classe "fade-in" sur une durée de 3 secondes */
+}
+
+@keyframes fadeIn { /* Définition de l'animation de fondu */
+    0% {opacity:0;} /* L'élément est complètement transparent au début de l'animation */
+    100% {opacity:1;} /* L'élément est complètement opaque à la fin de l'animation */
+}
+
+p {
+    text-align: justify; /* Justifie le texte des paragraphes (aligne à gauche et à droite) */
+    color: #fff; /* Définit la couleur du texte des paragraphes en blanc */
+    line-height: 1.6; /* Définit l'espace entre les lignes de texte dans les paragraphes */
+}
+
+a {
+    color: #800080; /* Couleur des liens en violet */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+a:hover {
+    color: #4b0082; /* Couleur des liens lorsqu'ils sont survolés en violet foncé */
+}
+
+/* Style pour les liens visités */
+a:visited {
+    color: #8a2be2; /* Couleur des liens visités en bleu-violet */
+}
+
+/* Style pour les liens actifs (lorsqu'ils sont cliqués) */
+a:active {
+    color: #9370db; /* Couleur des liens actifs en violet moyen */
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces devant les éléments de liste non ordonnée (ul) */
+}
+
+.social-icons-container {
+    text-align: center;
+}
+
+.social-icons {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0 0px;
+}
+
+.facebook-icon {
+    margin-right: 95px;
+}
+
+.linkedin-icon {
+    margin-right: 40px;
+}
